@@ -1,0 +1,15 @@
+﻿@model List<LabelResult>
+
+<h2>Resultados de Rekognition</h2>
+<ul>
+    @foreach (var label in Model)
+    {
+        <li>
+            <strong>@label.Name</strong>: @label.Confidence%
+            <ul>
+                <li>Parents: @string.Join(", ", label.Parents)</li>
+            </ul>
+        </li>
+    }
+</ul>
+

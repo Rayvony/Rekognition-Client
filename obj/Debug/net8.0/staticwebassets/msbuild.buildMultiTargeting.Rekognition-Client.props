@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Rekognition-Client.props" />
+</Project>
